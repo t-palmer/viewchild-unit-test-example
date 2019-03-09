@@ -11,7 +11,7 @@ describe('ParentComponent', () => {
     TestBed.configureTestingModule({
       declarations: [
         ParentComponent,
-        ChildComponent
+        ChildStubComponent
       ]
     })
     .compileComponents();
@@ -20,7 +20,8 @@ describe('ParentComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(ParentComponent);
     component = fixture.componentInstance;
-//    component.childComponent = TestBed.createComponent(ChildStubComponent).componentInstance as ChildComponent;
+//    component.childComponent = TestBed.createComponent(ChildStubComponent).componentInstance;
+    component.childComponent = TestBed.createComponent(ChildStubComponent).componentInstance as ChildComponent;
     fixture.detectChanges();
   });
 

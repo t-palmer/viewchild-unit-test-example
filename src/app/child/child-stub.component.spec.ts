@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   template: ''
 })
 export class ChildStubComponent {
-  public timeStamp: Date;
+//  timeStamp;
 
 //  ngOnInit() {}
   updateTimeStamp() {}
