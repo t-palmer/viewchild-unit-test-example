@@ -1,11 +1,13 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { ParentStubComponent } from './parent/parent-stub.component.spec';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        ParentStubComponent
       ],
     }).compileComponents();
   }));
