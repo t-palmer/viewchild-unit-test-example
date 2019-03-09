@@ -9,7 +9,7 @@ import { ChildComponent } from '../child/child.component';
     <app-child></app-child>`
 })
 export class ParentComponent {
-  @ViewChild(ChildComponent) childComponent !: ChildComponent;
+  @ViewChild(ChildComponent) childComponent: ChildComponent;
 
   update() {
     this.childComponent.updateTimeStamp();
