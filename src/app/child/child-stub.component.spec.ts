@@ -1,12 +1,16 @@
 import { Component } from '@angular/core';
+import { ChildComponent } from './child.component';
 
 @Component({
   selector: 'app-child',
-  template: ''
+  template: '',
+  providers: [
+    {
+      provide: ChildComponent,
+      useClass: ChildStubComponent
+    }
+  ]
 })
 export class ChildStubComponent {
-//  timeStamp;
-
-//  ngOnInit() {}
   updateTimeStamp() {}
 }

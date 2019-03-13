@@ -1,6 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { ParentComponent } from './parent.component';
-import { ChildComponent } from '../child/child.component';
 import { ChildStubComponent } from '../child/child-stub.component.spec';
 
 describe('ParentComponent', () => {
@@ -20,8 +19,6 @@ describe('ParentComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(ParentComponent);
     component = fixture.componentInstance;
-//    component.childComponent = TestBed.createComponent(ChildStubComponent).componentInstance;
-    component.childComponent = TestBed.createComponent(ChildStubComponent).componentInstance as ChildComponent;
     fixture.detectChanges();
   });
 
